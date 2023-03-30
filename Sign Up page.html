@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="GradeJet-Light_-_Favicon-removebg-preview.png" type="image/x-icon">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style for startup.css">
+    <style>
+        body{
+            background-color: white;
+        }
+        .submit{
+            width: 150px;
+        }
+        .links a{
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label class="toggle-btn"  id="dark-change"></label>
+    </div>
+        <div class="box2">
+            <div class="form2">
+                <h2 class="create">Create a new account</h2>
+                <form>
+                    <div class="inputBox">
+                        <input id="email2" type="email" required="required" oninput="setCustomValidity('')" oninvalid="setCustomValidity('Your Email Address Here')">
+                        <span>Email Address</span>
+                        <i></i>
+                    </div>
+                    <div class="inputBox">
+                        <input  id="Name" type="text" required="required" oninput="setCustomValidity('')" oninvalid="this.setCustomValidity('Your Name Here')">
+                        <span>Your Name</span>
+                        <i></i>
+                    </div>
+                    <div class="inputBox">
+                        <input  id="password2" type="password" required="required" oninput="setCustomValidity('')" oninvalid="this.setCustomValidity('Your Password Here')">
+                        <span>Password</span>
+                        <i></i>
+                    </div>
+                    <div class="inputBox">
+                        <input id="conpassword" type="password" required="required" oninput="setCustomValidity('')" oninvalid="this.setCustomValidity('Confirm Your Password Here')">
+                        <span>Confirm Password</span>
+                        <i></i>
+                    </div>
+                    <div class="links">
+                        <a href="#">Terms & condition.</a>
+                        <a href="Log in Page.html">Login</a>
+                    </div>
+                    <button onclick="signup()" class="submit" type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+
+
+</body>
+<script src="app.js"></script>
+</html>

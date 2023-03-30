@@ -1,0 +1,22 @@
+
+/** ADD YOUR AWESOME CODES HERE **/
+.back{
+    justify-content: space-around;
+    margin: 100px 0;
+    text-align: center;
+    display: flex;
+}
+.back p{
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+}
+.back button{
+    background: none;
+    border: 0;
+    color: #222;
+    outline: none;
+}
+.tan{
+    font-size: 30px
+}

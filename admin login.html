@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="GradeJet-Light_-_Favicon-removebg-preview.png" type="image/x-icon">
+    <title>Document</title>
+    <link rel="stylesheet" href="style for startup.css">
+</head>
+<body>
+    <div>
+        <label class="toggle-btn"  id="dark-change"></label>
+    </div>
+        <div class="box">
+            <div class="form">
+                <h2>Sign In as <br> Admin</h2>
+                <form>
+                    <div class="inputBox">
+                        <input id="emaila" type="text" required="required" oninput="setCustomValidity('')" oninvalid="setCustomValidity('Your Email or Username Here')">
+                        <span>Email or Username</span>
+                        <i></i>
+                    </div>
+                    <div class="inputBox">
+                        <input id="passworda" type="password" required="required" oninput="setCustomValidity('')" oninvalid="this.setCustomValidity('Your Password Here')">
+                        <span>Passkey</span>
+                        <i></i>
+                    </div>
+                    <div class="links">
+                        <a href="#">Forgot Passkey</a>
+                        <a onclick="ss()" href="#">Sign up</a>
+                    </div>
+                    <button onclick="tt()" class="submit" type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+
+
+</body>
+
+<script src="app.js"></script>
+<script>
+    function tt(){
+        alert("The admin page is still in construction")
+    }
+    function ss(){
+        alert("To signup as an admin then you will be paying some amount of money just click on the login button")
+    }
+</script>
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://kit.fontawesome.com/1603847c36.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <link rel="stylesheet" href="style for startup.css">
+    <link rel="stylesheet" href="all.css">
+</head>
+
+<body>
+    <main class="large">
+        <div class="aside">
+            <div class="school-info">
+                <button class="img-btn"><img class="admin-image" src="co.jpg" alt=""></button>
+                <h4>SQI COLLEGE OF ICT</h4>
+            </div>
+            <div>
+                <div class="dashboard" onclick="dashe()" id="dashboard">
+                    <div class="flexible">
+                        <i class="fa fa-chart-line"></i>
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        <p>Dashboard</p>
+                    </div>
+                    <i class="fa fa-angle-right"></i>
+                </div>
+                <div class="dashboard" onclick="stud()" id="student">
+                    <div class="flexible">
+                        <i class="fa fa-user-graduate"></i>
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        <p>Students</p>
+                    </div>
+                    <i class="fa fa-angle-right"></i>
+                </div>
+                <div class="dashboard" onclick="staf()" id="staff">
+                    <div class="flexible">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        <p>Staffs</p>
+                    </div>
+                    <i class="fa fa-angle-right"></i>
+                </div>
+                <div class="dashboard" id="">
+                    <div class="flexible">
+                        <i class="fas fa-satellite"></i>
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        <p>Class</p>
+                    </div>
+                    <i class="fa fa-angle-right"></i>
+                </div>
+                <div class="dashboard" id="">
+                    <div class="flexible">
+                        <i class="fa fa-calculator"></i>
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        <p>Account</p>
+                    </div>
+                    <i class="fa fa-angle-right"></i>
+                </div>
+                <div class="dashboard" id="">
+                    <div class="flexible">
+                        <i class="fas fa-envelope"></i>
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        <p>Messages</p>
+                    </div>
+                    <i class="fa fa-angle-right"></i>
+                </div>
+                <div class="dashboard" id="">
+                    <div class="flexible">
+                        <i class="far fa-bell fa-shake"></i>
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        <p>Notifications</p>
+                    </div>
+                    <i class="fa fa-angle-right"></i>
+                </div>
+                <div class="dashboard" id="">
+                    <div class="flexible">
+                        <i class="far fa-calendar-alt"></i>
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        <p>Calendar</p>
+                    </div>
+                    <i class="fa fa-angle-right"></i>
+                </div>
+                <div class="dashboard" id="">
+                    <div class="flexible">
+                        <i class="far fa-calendar-alt"></i>
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        <p>Expenses</p>
+                    </div>
+                    <i class="fa fa-angle-right"></i>
+                </div>
+                <div class="dashboard" id="">
+                    <div class="flexible">
+                        <i class="fa-solid fa-cog fa-spin"></i>
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        <p>Settings</p>
+                    </div>
+                    <i class="fa fa-angle-right"></i>
+                </div>
+                <div class="dashboard" id="logout">
+                    <div class="flexible">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        <p>Logout</p>
+                    </div>
+                    <i class="fa fa-angle-right"></i>
+                </div>
+            </div>
+        </div>
+        <div class="show">
+            <div class="nav">
+                <div class="input-bar">
+                    <i class="fa fa-search"></i>
+                    &nbsp;&nbsp;
+                    <input placeholder="Search Here" type="text">
+                </div>
+                <div class="viva">
+                    <div class="admin-odd">
+                        <div class="right-text">
+                            <p class="tot">Adeyemi Aderinto</p>
+                            <p>Admin</p>
+                        </div>
+                        &nbsp;
+                        &nbsp;
+                        <img class="admin-img" src="Adeyemi.jpeg" alt="">
+                    </div>
+                    &nbsp;
+                    &nbsp;
+                    <div class="vex">
+                        <button class="premium">Go Premium</button>
+                        &nbsp;
+                        &nbsp;
+                        <div class="bruh">
+                            <button class="lang">EN &nbsp;<i class="fas fa-caret-down"></i></button>
+                            <div class="content">
+                                <p>Arabic</p>
+                                <p>French</p>
+                                <p>Chinese</p>
+                                <p>Korean</p>
+                                <p>Hindi</p>
+                                <p>Other</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body">
+                <h2 class="header">Admin Dashboard</h2>
+                <div class="cic">
+                    <p>Home</p>&nbsp;&nbsp;
+                    <p class="uj">> &nbsp; Admin</p>
+                </div>
+                <div class="concurrent">
+                    <div class="goin">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <p>Students</p>
+                            <p class="sel">95,520</p>
+                        </div>
+                    </div>
+                    <div class="goin">
+                        <i class="fa-solid uni fa-chalkboard-user"></i>
+                        <div>
+                            <p>Teachers</p>
+                            <p class="sel">2850</p>
+                        </div>
+                    </div>
+                    <div class="goin">
+                        <i class="fa-solid koke fa-satellite"></i>
+                        <div>
+                            <p>Class</p>
+                            <p class="sel">1590</p>
+                        </div>
+                    </div>
+                    <div class="goin">
+                        <i class="far fa-money-bill-alt"></i>
+                        <div>
+                            <p>Earnings</p>
+                            <p class="sel">&#36; 193000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dis-flex">
+                    <div class="class-attendance">
+                        <div class="card">
+                            <h2>Class Average Attendance</h2>
+                            <div class="pulse"></div>
+                            <div class="area-chart">
+                                <div class="grid"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="expenses">
+                        <h2>Expenses</h2>
+                        <div class="cover">
+                            <div class="e1">
+                                <p>2002</p>
+                                <p class="e1-p">&#36; 15,000</p>
+                                <div class="e1-div"></div>
+                            </div>
+                            <div class="e1">
+                                <p>2012</p>
+                                <p class="e1-p">&#36; 10,000</p>
+                                <div class="e2-div"></div>
+                            </div>
+                            <div class="e1">
+                                <p>2016</p>
+                                <p class="e1-p">&#36; 18,000</p>
+                                <div class="e3-div"></div>
+                            </div>
+                            <div class="e1">
+                                <p>2022</p>
+                                <p class="e1-p">&#36; 29,000</p>
+                                <div class="e4-div"></div>
+                            </div>
+                        </div>
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+                <div class="dis-flex">
+                    <div class="student">
+                        <h2>Students Population</h2>
+                        <canvas id="myChart2"></canvas>
+                    </div>
+                    <div>
+                        <div class="calendar">
+                            <h2>Calendar</h2>
+                            <div class="calendar-header">
+                                <span class="month-picker" id="month-picker"> May </span>
+                                <div class="year-picker" id="year-picker">
+                                    <span class="year-change" id="pre-year">
+                                        <pre><</pre>
+                                    </span>
+                                    <span id="year">2020 </span>
+                                    <span class="year-change" id="next-year">
+                                        <pre>></pre>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="calendar-body">
+                                <div class="calendar-week-days">
+                                    <div>Sun</div>
+                                    <div>Mon</div>
+                                    <div>Tue</div>
+                                    <div>Wed</div>
+                                    <div>Thu</div>
+                                    <div>Fri</div>
+                                    <div>Sat</div>
+                                </div>
+                                <div class="calendar-days">
+                                </div>
+                            </div>
+                            <div class="calendar-footer">
+                            </div>
+                            <div class="date-time-formate">
+                                <div class="day-text-formate">TODAY</div>
+                                <div class="date-time-value">
+                                    <div class="time-formate">02:51:20</div>
+                                    <div class="date-formate">23 - july - 2022</div>
+                                </div>
+                            </div>
+                            <div class="month-list"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body2">
+                <h2 class="header">Admin Dashboard</h2>
+                <div class="cic">
+                    <p>Home</p>&nbsp;&nbsp;
+                    <p class="uj">> &nbsp; Students</p>
+                </div>
+                <div class="board">
+                    <h2>All Students Data</h2>
+                    <div class="container">
+                        <input type="text" placeholder="Search ..." class="filter-input">
+                        <div class="output"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="body3">
+                <h2 class="header">Admin Dashboard</h2>
+                <div class="cic">
+                    <p>Home</p>&nbsp;&nbsp;
+                    <p class="uj">> &nbsp; Staff</p>
+                </div>
+                <div class="board">
+                    <h2>All Staff Data</h2>
+                    <div class="container">
+                        <input type="text" placeholder="Search ..." class="main-inp">
+                        <div class="style"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+<script src="Student Script.js"></script>
+<script src="Teacher Script.js"></script>
+<script src="all.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const data = {
+        labels: ['2002', '2012', '2016', '2022'],
+        datasets: [{
+            label: 'Expenses',
+            data: [15000, 10000, 18000, 29000],
+            backgroundColor: [
+                'rgba(255, 26, 104, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 26, 104, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+            ],
+            borderWidth: 1
+        }]
+    };
+
+    // config 
+    const config = {
+        type: 'bar',
+        data,
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    };
+
+    // render init block
+    const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+    );
+</script>
+
+
+
+<script>
+    let courses = ["Boys", "Girls"]
+    let students = [55520, 40000]
+    let barColors = ['rgba(54, 162, 235, 0.2)', 'rgba(255, 26, 104, 0.2)']
+
+    new Chart("myChart2", {
+        type: 'pie',
+        data: {
+            labels: courses,
+            datasets: [{
+                backgroundColor: barColors,
+                data: students,
+            }]
+        }
+    });
+
+
+    let logout = document.getElementById('logout')
+    logout.addEventListener('click', function (){
+        window.location.href="index.html"
+    })
+</script>
+
+</html>

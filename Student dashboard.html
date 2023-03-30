@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" contento="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="all.css">
+    <!-- <link rel="stylesheet" href="new.css"> -->
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <div class="logo_name"></div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Search...">
+                <span class="tooltip">Search</span>
+            </li>
+            <li id="dash">
+                <a href="#">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li id="sch">
+                <a href="#">
+                    <i class='bx bxs-school bx-flip-horizontal'></i>
+                    <span class="links_name">Schools</span>
+                </a>
+                <span class="tooltip">Schools</span>
+            </li>
+            <li onclick="msg()">
+                <a href="#">
+                    <i class='bx bx-chat'></i>
+                    <span class="links_name">Messages</span>
+                </a>
+                <span class="tooltip">Messages</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-pie-chart-alt-2'></i>
+                    <span class="links_name">Analytics</span>
+                </a>
+                <span class="tooltip">Analytics</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-folder'></i>
+                    <span class="links_name">File Manager</span>
+                </a>
+                <span class="tooltip">Files</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-game'></i>
+                    <span class="links_name">Games</span>
+                </a>
+                <span class="tooltip">Games</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-heart'></i>
+                    <span class="links_name">Saved</span>
+                </a>
+                <span class="tooltip">Saved</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                    <span class="links_name">Setting</span>
+                </a>
+                <span class="tooltip">Setting</span>
+            </li>
+            <li class="profile">
+                <div class="profile-details">
+                    <!--<img src="profile.jpg" alt="profileImg">-->
+                    <div class="name_job">
+                        <div class="name name-student"></div>
+                        <div class="job">Schoolar</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-out' id="log_out"></i>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section set">
+        <div class="text">Dashboard</div>
+        <div class="conts">
+            <h2>Welcome 🌹</h2>
+            <div class="hag name-studen"></div>
+            <div class="friends">
+                <div class="sef">
+                    <h2>Schools</h2>
+                    <hr>
+                    <i class="i">No Schools Yet</i>
+                </div>
+                <div class="sef">
+                    <h2>Storage</h2>
+                    <hr>
+                    <i class="i">Nothing is here!</i>
+                </div>
+                <div class="sef">
+                    <h2>Profile</h2>
+                    <hr>
+                    <i class="i">Complete your profile.</i>
+                </div>
+                <div class="sef">
+                    <h2>Saved</h2>
+                    <hr>
+                    <i class="i">You haven't saved anything here!</i>
+                </div>
+                <div class="sef">
+                    <h2>Level</h2>
+                    <hr>
+                    <i class="i">You still a beginner!</i>
+                </div>
+                <div class="sef">
+                    <h2>File Manager</h2>
+                    <hr>
+                    <input class="range" min="0" value="0" max="0" type="range">
+                    <div class="lex">
+                        <i>0mb</i>
+                        <i>300GB</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="home-section set2">
+        <div class="text">Schools</div>
+        <h2 class="conts">Lists of Institutions Nearby</h2>
+        <div class="">
+            <div class="maintain">
+                <div class="cardo">
+                    <div class="face face1">
+                        <div class="contento">
+                            <i class="fab fa-windows"></i>
+                            <h3>De Ayo International College</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="contento">
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo
+                                voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia
+                                molestias vitae fugiat aspernatur alias corporis?</p>
+                            <a href="#" type="button">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardo">
+                    <div class="face face1 sqi">
+                        <div class="contento">
+                            <!-- <img src="co.jpg" alt=""> -->
+                            <h3>SQI COLLEGE OF ICT</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="contento">
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo
+                                voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia
+                                molestias vitae fugiat aspernatur alias corporis?</p>
+                            <a href="SQI Profile page.html" type="button">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardo">
+                    <div class="face face1 deril">
+                        <div class="contento">
+                            <i class="fab fa-apple"></i>
+                            <h3>Deril Academy</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="contento">
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo
+                                voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia
+                                molestias vitae fugiat aspernatur alias corporis?</p>
+                            <a href="#" type="button">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardo">
+                    <div class="face face1 ap">
+                        <div class="contento">
+                            <i class="fab fa-apple"></i>
+                            <h3>AP-Tech</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="contento">
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo
+                                voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia
+                                molestias vitae fugiat aspernatur alias corporis?</p>
+                            <a href="#" type="button">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardo">
+                    <div class="face face1 horizon">
+                        <div class="contento">
+                            <i class="fab fa-apple"></i>
+                            <h3>New Horizon</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="contento">
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo
+                                voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia
+                                molestias vitae fugiat aspernatur alias corporis?</p>
+                            <a href="#" type="button">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardo">
+                    <div class="face face1 valencia">
+                        <div class="contento">
+                            <i class="fab fa-apple"></i>
+                            <h3>Valencia Schools</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="contento">
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo
+                                voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia
+                                molestias vitae fugiat aspernatur alias corporis?</p>
+                            <a href="#" type="button">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardo">
+                    <div class="face face1 obms">
+                        <div class="contento">
+                            <i class="fab fa-apple"></i>
+                            <h3>O.B.M.S.</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="contento">
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo
+                                voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia
+                                molestias vitae fugiat aspernatur alias corporis?</p>
+                            <a href="#" type="button">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardo">
+                    <div class="face face1 ay">
+                        <div class="contento">
+                            <i class="fab fa-apple"></i>
+                            <h3>A.Y. DE Computer</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="contento">
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo
+                                voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia
+                                molestias vitae fugiat aspernatur alias corporis?</p>
+                            <a href="#" type="button">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="home-section sege">
+        <div class="text">Messages</div>
+        <div class="conts">
+            <div class="flexed">
+                <h2>Meet New Friends</h2>
+            <input placeholder="Search For Friends" type="text">
+            </div>
+            <div class="flexed">
+                <div class="each" onclick="sharp()">
+                    <img class="status" src="user.png" alt="">
+                    &nbsp; &nbsp;
+                    <div>
+                        <p>Vivian</p>
+                        <p class="sch-name">SQI College of ICT</p>
+                    </div>
+                </div>
+                <div class="each" onclick="sharp()">
+                    <img class="status" src="user.png" alt="">
+                    &nbsp; &nbsp;
+                    <div>
+                        <p>Vivian</p>
+                        <p class="sch-name">SQI College of ICT</p>
+                    </div>
+                </div>
+                <div class="each" onclick="sharp()">
+                    <img class="status" src="user.png" alt="">
+                    &nbsp; &nbsp;
+                    <div>
+                        <p>Vivian</p>
+                        <p class="sch-name">SQI College of ICT</p>
+                    </div>
+                </div>
+                <div class="each" onclick="sharp()">
+                    <img class="status" src="user.png" alt="">
+                    &nbsp; &nbsp;
+                    <div>
+                        <p>Vivian</p>
+                        <p class="sch-name">SQI College of ICT</p>
+                    </div>
+                </div>
+                <div class="each" onclick="sharp()">
+                    <img class="status" src="user.png" alt="">
+                    &nbsp; &nbsp;
+                    <div>
+                        <p>Jim Hook</p>
+                        <p class="sch-name">Telebrite College</p>
+                    </div>
+                </div>
+                <div class="each" onclick="sharp()">
+                    <img class="status" src="user.png" alt="">
+                    &nbsp; &nbsp;
+                    <div>
+                        <p>Jim Hook</p>
+                        <p class="sch-name">Telebrite College</p>
+                    </div>
+                </div>
+                <div class="each" onclick="sharp()">
+                    <img class="status" src="user.png" alt="">
+                    &nbsp; &nbsp;
+                    <div>
+                        <p>Jim Hook</p>
+                        <p class="sch-name">Telebrite College</p>
+                    </div>
+                </div>
+                <div class="each" onclick="sharp()">
+                    <img class="status" src="user.png" alt="">
+                    &nbsp; &nbsp;
+                    <div>
+                        <p>Jim Hook</p>
+                        <p class="sch-name">Telebrite College</p>
+                    </div>
+                </div>
+                <div class="each" onclick="sharp()">
+                    <img class="status" src="user.png" alt="">
+                    &nbsp; &nbsp;
+                    <div>
+                        <p>Jim Hook</p>
+                        <p class="sch-name">Telebrite College</p>
+                    </div>
+                </div>
+                <div class="each" onclick="sharp()">
+                    <img class="status" src="user.png" alt="">
+                    &nbsp; &nbsp;
+                    <div>
+                        <p>Jim Hook</p>
+                        <p class="sch-name">Telebrite College</p>
+                    </div>
+                </div>
+                <div class="each" onclick="sharp()">
+                    <img class="status" src="user.png" alt="">
+                    &nbsp; &nbsp;
+                    <div>
+                        <p>Jim Hook</p>
+                        <p class="sch-name">Telebrite College</p>
+                    </div>
+                </div>
+                <div class="each" onclick="sharp()">
+                    <img class="status" src="user.png" alt="">
+                    &nbsp; &nbsp;
+                    <div>
+                        <p>Jim Hook</p>
+                        <p class="sch-name">Telebrite College</p>
+                    </div>
+                </div>
+                <div class="each" onclick="sharp()">
+                    <img class="status" src="user.png" alt="">
+                    &nbsp; &nbsp;
+                    <div>
+                        <p>Zhing</p>
+                        <p class="sch-name">Telebrite College</p>
+                    </div>
+                </div>
+                <div class="each" onclick="sharp()">
+                    <img class="status" src="user.png" alt="">
+                    &nbsp; &nbsp;
+                    <div>
+                        <p>Daniel</p>
+                        <p class="sch-name">De Ayo Int'l College</p>
+                    </div>
+                </div>
+                <div class="each" onclick="sharp()">
+                    <img class="status" src="user.png" alt="">
+                    &nbsp; &nbsp;
+                    <div>
+                        <p>Daniel</p>
+                        <p class="sch-name">De Ayo Int'l College</p>
+                    </div>
+                </div>
+                <div class="each" onclick="sharp()">
+                    <img class="status" src="user.png" alt="">
+                    &nbsp; &nbsp;
+                    <div>
+                        <p>Daniel</p>
+                        <p class="sch-name">De Ayo Int'l College</p>
+                    </div>
+                </div>
+                <div class="each" onclick="sharp()">
+                    <img class="status" src="user.png" alt="">
+                    &nbsp; &nbsp;
+                    <div>
+                        <p>Paul</p>
+                        <p class="sch-name">AP-Tech</p>
+                    </div>
+                </div>
+                <div class="each" onclick="sharp()">
+                    <img class="status" src="user.png" alt="">
+                    &nbsp; &nbsp;
+                    <div>
+                        <p>Ganga</p>
+                        <p class="sch-name">Masserat College</p>
+                    </div>
+                </div>
+                <div class="each" onclick="sharp()">
+                    <img class="status" src="user.png" alt="">
+                    &nbsp; &nbsp;
+                    <div>
+                        <p>Ganga</p>
+                        <p class="sch-name">Masserat College</p>
+                    </div>
+                </div>
+                <div class="each" onclick="sharp()">
+                    <img class="status" src="user.png" alt="">
+                    &nbsp; &nbsp;
+                    <div>
+                        <p>Ganga</p>
+                        <p class="sch-name">Masserat College</p>
+                    </div>
+                </div>
+                <div class="each" onclick="sharp()">
+                    <img class="status" src="user.png" alt="">
+                    &nbsp; &nbsp;
+                    <div>
+                        <p>Philips</p>
+                        <p class="sch-name">Deril Academy</p>
+                    </div>
+                </div>
+                <div class="each" onclick="sharp()">
+                    <img class="status" src="user.png" alt="">
+                    &nbsp; &nbsp;
+                    <div>
+                        <p>Zhing</p>
+                        <p class="sch-name">Telebrite College</p>
+                    </div>
+                </div>
+                <div class="each" onclick="sharp()">
+                    <img class="status" src="user.png" alt="">
+                    &nbsp; &nbsp;
+                    <div>
+                        <p>Zhing</p>
+                        <p class="sch-name">Telebrite College</p>
+                    </div>
+                </div>
+                <div class="each" onclick="sharp()">
+                    <img class="status" src="user.png" alt="">
+                    &nbsp; &nbsp;
+                    <div>
+                        <p>Zhing</p>
+                        <p class="sch-name">Telebrite College</p>
+                    </div>
+                </div>
+                <div class="each" onclick="sharp()">
+                    <img class="status" src="user.png" alt="">
+                    &nbsp; &nbsp;
+                    <div>
+                        <p>Zhing</p>
+                        <p class="sch-name">Telebrite College</p>
+                    </div>
+                </div>
+                <div class="each" onclick="sharp()">
+                    <img class="status" src="user.png" alt="">
+                    &nbsp; &nbsp;
+                    <div>
+                        <p>Ganga</p>
+                        <p class="sch-name">Masserat College</p>
+                    </div>
+                </div>
+                <div class="each" onclick="sharp()">
+                    <img class="status" src="user.png" alt="">
+                    &nbsp; &nbsp;
+                    <div>
+                        <p>Paul</p>
+                        <p class="sch-name">AP-Tech</p>
+                    </div>
+                </div>
+                <div class="each" onclick="sharp()">
+                    <img class="status" src="user.png" alt="">
+                    &nbsp; &nbsp;
+                    <div>
+                        <p>Paul</p>
+                        <p class="sch-name">AP-Tech</p>
+                    </div>
+                </div>
+                <div class="each" onclick="sharp()">
+                    <img class="status" src="user.png" alt="">
+                    &nbsp; &nbsp;
+                    <div>
+                        <p>Paul</p>
+                        <p class="sch-name">AP-Tech</p>
+                    </div>
+                </div>
+                <div class="each" onclick="sharp()">
+                    <img class="status" src="user.png" alt="">
+                    &nbsp; &nbsp;
+                    <div>
+                        <p>Paul</p>
+                        <p class="sch-name">AP-Tech</p>
+                    </div>
+                </div>
+                <div class="each" onclick="sharp()">
+                    <img class="status" src="user.png" alt="">
+                    &nbsp; &nbsp;
+                    <div>
+                        <p>Paul</p>
+                        <p class="sch-name">AP-Tech</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="noneModal">
+            <div class="modal">
+                <div class="msg-box">
+                    <div class="madd">
+                        <button onclick="back()"><i class="fa fa-arrow-left"></i></button>
+                        <h2>Chats</h2>
+                    </div>
+                    <div class="chatBox">
+
+                    </div>
+                    <div class="sendCoup">
+                        <input class="sendInp" type="text">
+                        <button onclick="addem()">Send</button>
+                    </div>
+                </div>
+        </div>
+        </div>
+    </div>
+    <script src="student.js"></script>
+</body>
+</html>
